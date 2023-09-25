@@ -1,0 +1,285 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100px;
+    border-radius: 60px;
+    /* border: 2px solid white; */
+}
+
+/* CSS variables */
+:root{
+    --navbar-height: 60px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 35px;
+}
+
+#logo img{
+    /* margin: 3px 6px; */
+    height: 40px;
+    width: 40px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar{
+    position: relative;
+    top: 0px;
+}
+
+#navbar ul{
+    display: flex;
+    /* margin: 10px; */
+    /* padding: 10px; */
+    
+    font-family: 'Chivo', sans-serif;
+}
+
+#navbar::before{
+    content: "";
+    background-color: #2b2626;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.96;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    /* padding: 0; */
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 587px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background-color: black;
+    background: url(./Download\ premium\ vector\ of\ Black\ smoky\ abstract\ background\ vector\ by\ Chim\ \ about\ abstract\,\ black\,\ smoke\,\ grunge\ background\,\ and\ grunge\ texture\ 895475.jfif) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.96;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Asap Condensed', sans-serif;
+    /* font-family: 'Bruno Ace SC', cursive; */
+    font-family: 'Chivo', sans-serif;
+    /* font-family: 'Secular One', sans-serif; */
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    /* font-family: 'Asap Condensed', sans-serif; */
+    /* font-family: 'Bruno Ace SC', cursive; */
+    font-family: 'Chivo', sans-serif;
+    font-family: 'Secular One', sans-serif;
+}
+
+/* Services Container */
+/* For all images */
+.services-container{
+    padding: 0;
+    margin: 0px;
+    position: relative;
+    top: 55px;
+}
+
+#img1{
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+
+#services .box{
+    /* remove this after implementing all the CSS */
+    /* border: 2px solid red; */
+    margin: 3px 6px;
+    padding: 34px;
+
+}
+#services .box #img1{
+    height: 300px;
+    width: 350px;
+    border-radius: 30px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.6);;
+    margin: auto;
+    display: block;
+}
+
+#services .box #img1:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#services .box p{
+    font-family: sans-serif;
+}
+
+/* Client Section */
+#client-section{
+    padding: 34px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('./bg_3.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 58%;
+    z-index: -1;
+    opacity: 0.5;
+    position: absolute;
+    top: 1925px;
+    left: 0px;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height: 200px;
+    width: 200px;
+    /* border-radius: 100px; */
+}
+
+.client-item{
+    padding: 34px;
+}
+
+/* Contact-Section */
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    position: absolute;
+    top: 7px;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    background: url('../contact_bg.jpg') no-repeat center center/cover;
+}
+
+footer{
+    color: white;
+    background-color: black;
+    padding: 9px 20px;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Chivo', sans-serif;
+}
+
+#contact-box input,
+#contact-box textarea{
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+
+/* Utility Classes */
+.h-primary{
+    /* color: white; */
+    font-size: 2.8rem;
+    padding: 25px;
+}
+
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: grey;
+    margin: 17px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    /* opacity: 0.9; */
+}
+
+.center{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+
